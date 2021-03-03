@@ -3,10 +3,12 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiProperty;
 
 /**
  * Groupe
- *
+ * @ApiResource()
  * @ORM\Table(name="groupe")
  * @ORM\Entity
  */

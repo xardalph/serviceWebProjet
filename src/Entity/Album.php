@@ -3,10 +3,17 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiProperty;
+
+
+
 
 /**
+ * @ApiResource(attributes={"filters"={"offer.date"}})
+/**
  * Album
- *
+ * @ApiResource()
  * @ORM\Table(name="album", indexes={@ORM\Index(name="FK_ALBUM_GROUPE", columns={"IDGROUPE"}), @ORM\Index(name="FK_ALBUM_ARTISTE", columns={"IDARTISTE"})})
  * @ORM\Entity
  */
