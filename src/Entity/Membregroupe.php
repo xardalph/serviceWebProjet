@@ -21,27 +21,27 @@ class Membregroupe
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id;
+    public $id;
 
     /**
-     * @var \Artiste
+     * @var Artiste
      *
      * @ORM\ManyToOne(targetEntity="Artiste")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="IDARTISTE", referencedColumnName="ID")
      * })
      */
-    private $idartiste;
+    public $idartiste;
 
     /**
-     * @var \Groupe
+     * @var Groupe
      *
      * @ORM\ManyToOne(targetEntity="Groupe")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="IDGROUPE", referencedColumnName="ID")
      * })
      */
-    private $idgroupe;
+    public $idgroupe;
 
 
 }

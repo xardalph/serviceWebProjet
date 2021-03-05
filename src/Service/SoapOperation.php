@@ -64,4 +64,15 @@ class SoapOperations
         $sector = new SecteurSoap($secteur->getId(), $secteur->getLibelle());
         return $sector;
     }
+
+    /**
+     * Récupère le libellé d'un secteur dont on connaît l'id
+     * @return \App\Soap\SecteurSoap Le secteur avec l'id et le libellé
+     */
+    public function getMorceauLibelle($morceau)
+    {
+        $secteur = $this->doct->getRepository(\App\Entity\Morceau::class)->find($morceau->id);
+        $sector = new SecteurSoap($secteur->getId(), $secteur->getLibelle());
+        return $sector;
+    }
 }

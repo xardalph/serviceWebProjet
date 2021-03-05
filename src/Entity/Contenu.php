@@ -21,27 +21,27 @@ class Contenu
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id;
+    public $id;
 
     /**
-     * @var \Album
+     * @var Album
      *
      * @ORM\ManyToOne(targetEntity="Album")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="IDALBUM", referencedColumnName="ID")
      * })
      */
-    private $idalbum;
+    public $idalbum;
 
     /**
-     * @var \Morceau
+     * @var Morceau
      *
      * @ORM\ManyToOne(targetEntity="Morceau")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="IDMORCEAU", referencedColumnName="ID")
      * })
      */
-    private $idmorceau;
+    public $idmorceau;
 
 
 }

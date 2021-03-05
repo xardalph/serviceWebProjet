@@ -5,7 +5,7 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use ApiPlatform\Core\Annotation\ApiResource;
 use ApiPlatform\Core\Annotation\ApiProperty;
-
+use App\Entity\Album;
 /**
  * Vente
  *  @ApiResource()
@@ -21,28 +21,28 @@ class Vente
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id;
+    public $id;
 
     /**
      * @var float
      *
      * @ORM\Column(name="MOIS", type="float", precision=10, scale=0, nullable=false)
      */
-    private $mois;
+    public $mois;
 
     /**
      * @var float
      *
      * @ORM\Column(name="ANNEE", type="float", precision=10, scale=0, nullable=false)
      */
-    private $annee;
+    public $annee;
 
     /**
      * @var float
      *
      * @ORM\Column(name="NBVENTES", type="float", precision=10, scale=0, nullable=false)
      */
-    private $nbventes;
+    public $nbventes;
 
     /**
      * @var \Album
@@ -52,7 +52,7 @@ class Vente
      *   @ORM\JoinColumn(name="IDALBUM", referencedColumnName="ID")
      * })
      */
-    private $idalbum;
+    public $idalbum;
 
 
 }

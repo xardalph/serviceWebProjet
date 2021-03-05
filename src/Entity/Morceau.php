@@ -21,21 +21,21 @@ class Morceau
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id;
+    public $id;
 
     /**
      * @var string
      *
      * @ORM\Column(name="TITRE", type="string", length=300, nullable=false)
      */
-    private $titre;
+    public $titre;
 
     /**
      * @var string
      *
      * @ORM\Column(name="DUREE", type="string", length=5, nullable=false)
      */
-    private $duree;
+    public $duree;
 
 
 }

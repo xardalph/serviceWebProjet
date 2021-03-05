@@ -21,14 +21,14 @@ class Groupe
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id;
+    public $id;
 
     /**
      * @var string
      *
      * @ORM\Column(name="NOM", type="string", length=300, nullable=false)
      */
-    private $nom;
+    public $nom;
 
 
 }
