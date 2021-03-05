@@ -37,5 +37,53 @@ class Morceau
      */
     public $duree;
 
+    /**
+     * @return float
+     */
+    public function getId(): float
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param float $id
+     */
+    public function setId(float $id): void
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTitre(): string
+    {
+        return $this->titre;
+    }
+
+    /**
+     * @param string $titre
+     */
+    public function setTitre(string $titre): void
+    {
+        $this->titre = $titre;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDuree(): string
+    {
+        return $this->duree;
+    }
+
+    /**
+     * @param string $duree
+     */
+    public function setDuree(string $duree): void
+    {
+        $this->duree = $duree;
+    }
+
 
 }
