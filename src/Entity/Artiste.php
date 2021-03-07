@@ -37,6 +37,7 @@ class Artiste
      */
     public $estchanteur;
 
+
   
 
 
