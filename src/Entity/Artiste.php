@@ -36,9 +36,4 @@ class Artiste
      * @ORM\Column(name="ESTCHANTEUR", type="string", length=1, nullable=false, options={"fixed"=true})
      */
     public $estchanteur;
-
-
-  
-
-
 }

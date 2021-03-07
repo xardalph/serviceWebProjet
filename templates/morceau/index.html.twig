@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <section class="text-center">
+        <div class="container pt-5">
+            <h1 class="jumbotron-heading">Bonjour !</h1>
+
+            {% for morc in morceaux %}
+                <a>{{ morc.titre }}</a>
+                <br>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}        *
