@@ -80,4 +80,18 @@ class SoapOperations
 
         return $morceau;
     }
+    /**
+     * Récupère le libellé d'un secteur dont on connaît l'id
+     * @return \App\Soap\MorceauSoap Le Morceau qu'on veux
+     */
+    public function getGroupe($id)
+    {
+
+        $mor2 = $this->doct->getRepository(\App\Entity\Morceau::class)->find($id);
+        $morceau = new MorceauSoap($mor2->getId(), $mor2->getTitre(), $mor2->getDuree() );
+
+        file_put_contents("./tests2", serialize($morceau->titre));
+
+        return $morceau;
+    }
 }
