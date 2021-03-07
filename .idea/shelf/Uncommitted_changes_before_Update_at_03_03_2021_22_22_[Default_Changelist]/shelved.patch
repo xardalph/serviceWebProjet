@@ -1,0 +1,339 @@
+Index: src/Repository/GroupeRepository.php
+===================================================================
+--- src/Repository/GroupeRepository.php	(revision 6b8011705cf6cff80ebfd4f7c0c0913e03e3ac2d)
++++ src/Repository/GroupeRepository.php	(revision 6b8011705cf6cff80ebfd4f7c0c0913e03e3ac2d)
+@@ -1,50 +0,0 @@
+-<?php
+-
+-namespace App\Repository;
+-
+-use App\Entity\Groupe;
+-use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+-use Doctrine\Persistence\ManagerRegistry;
+-
+-/**
+- * @method Groupe|null find($id, $lockMode = null, $lockVersion = null)
+- * @method Groupe|null findOneBy(array $criteria, array $orderBy = null)
+- * @method Groupe[]    findAll()
+- * @method Groupe[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+- */
+-class GroupeRepository extends ServiceEntityRepository
+-{
+-    public function __construct(ManagerRegistry $registry)
+-    {
+-        parent::__construct($registry, Groupe::class);
+-    }
+-
+-    // /**
+-    //  * @return Groupe[] Returns an array of Groupe objects
+-    //  */
+-    /*
+-    public function findByExampleField($value)
+-    {
+-        return $this->createQueryBuilder('g')
+-            ->andWhere('g.exampleField = :val')
+-            ->setParameter('val', $value)
+-            ->orderBy('g.id', 'ASC')
+-            ->setMaxResults(10)
+-            ->getQuery()
+-            ->getResult()
+-        ;
+-    }
+-    */
+-
+-    /*
+-    public function findOneBySomeField($value): ?Groupe
+-    {
+-        return $this->createQueryBuilder('g')
+-            ->andWhere('g.exampleField = :val')
+-            ->setParameter('val', $value)
+-            ->getQuery()
+-            ->getOneOrNullResult()
+-        ;
+-    }
+-    */
+-}
+Index: src/Repository/MorceauRepository.php
+===================================================================
+--- src/Repository/MorceauRepository.php	(revision 6b8011705cf6cff80ebfd4f7c0c0913e03e3ac2d)
++++ src/Repository/MorceauRepository.php	(revision 6b8011705cf6cff80ebfd4f7c0c0913e03e3ac2d)
+@@ -1,50 +0,0 @@
+-<?php
+-
+-namespace App\Repository;
+-
+-use App\Entity\Morceau;
+-use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+-use Doctrine\Persistence\ManagerRegistry;
+-
+-/**
+- * @method Morceau|null find($id, $lockMode = null, $lockVersion = null)
+- * @method Morceau|null findOneBy(array $criteria, array $orderBy = null)
+- * @method Morceau[]    findAll()
+- * @method Morceau[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+- */
+-class MorceauRepository extends ServiceEntityRepository
+-{
+-    public function __construct(ManagerRegistry $registry)
+-    {
+-        parent::__construct($registry, Morceau::class);
+-    }
+-
+-    // /**
+-    //  * @return Morceau[] Returns an array of Morceau objects
+-    //  */
+-    /*
+-    public function findByExampleField($value)
+-    {
+-        return $this->createQueryBuilder('m')
+-            ->andWhere('m.exampleField = :val')
+-            ->setParameter('val', $value)
+-            ->orderBy('m.id', 'ASC')
+-            ->setMaxResults(10)
+-            ->getQuery()
+-            ->getResult()
+-        ;
+-    }
+-    */
+-
+-    /*
+-    public function findOneBySomeField($value): ?Morceau
+-    {
+-        return $this->createQueryBuilder('m')
+-            ->andWhere('m.exampleField = :val')
+-            ->setParameter('val', $value)
+-            ->getQuery()
+-            ->getOneOrNullResult()
+-        ;
+-    }
+-    */
+-}
+Index: src/Repository/ContenuRepository.php
+===================================================================
+--- src/Repository/ContenuRepository.php	(revision 6b8011705cf6cff80ebfd4f7c0c0913e03e3ac2d)
++++ src/Repository/ContenuRepository.php	(revision 6b8011705cf6cff80ebfd4f7c0c0913e03e3ac2d)
+@@ -1,50 +0,0 @@
+-<?php
+-
+-namespace App\Repository;
+-
+-use App\Entity\Contenu;
+-use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+-use Doctrine\Persistence\ManagerRegistry;
+-
+-/**
+- * @method Contenu|null find($id, $lockMode = null, $lockVersion = null)
+- * @method Contenu|null findOneBy(array $criteria, array $orderBy = null)
+- * @method Contenu[]    findAll()
+- * @method Contenu[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+- */
+-class ContenuRepository extends ServiceEntityRepository
+-{
+-    public function __construct(ManagerRegistry $registry)
+-    {
+-        parent::__construct($registry, Contenu::class);
+-    }
+-
+-    // /**
+-    //  * @return Contenu[] Returns an array of Contenu objects
+-    //  */
+-    /*
+-    public function findByExampleField($value)
+-    {
+-        return $this->createQueryBuilder('c')
+-            ->andWhere('c.exampleField = :val')
+-            ->setParameter('val', $value)
+-            ->orderBy('c.id', 'ASC')
+-            ->setMaxResults(10)
+-            ->getQuery()
+-            ->getResult()
+-        ;
+-    }
+-    */
+-
+-    /*
+-    public function findOneBySomeField($value): ?Contenu
+-    {
+-        return $this->createQueryBuilder('c')
+-            ->andWhere('c.exampleField = :val')
+-            ->setParameter('val', $value)
+-            ->getQuery()
+-            ->getOneOrNullResult()
+-        ;
+-    }
+-    */
+-}
+Index: src/Repository/ArtisteRepository.php
+===================================================================
+--- src/Repository/ArtisteRepository.php	(revision 6b8011705cf6cff80ebfd4f7c0c0913e03e3ac2d)
++++ src/Repository/ArtisteRepository.php	(revision 6b8011705cf6cff80ebfd4f7c0c0913e03e3ac2d)
+@@ -1,50 +0,0 @@
+-<?php
+-
+-namespace App\Repository;
+-
+-use App\Entity\Artiste;
+-use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+-use Doctrine\Persistence\ManagerRegistry;
+-
+-/**
+- * @method Artiste|null find($id, $lockMode = null, $lockVersion = null)
+- * @method Artiste|null findOneBy(array $criteria, array $orderBy = null)
+- * @method Artiste[]    findAll()
+- * @method Artiste[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+- */
+-class ArtisteRepository extends ServiceEntityRepository
+-{
+-    public function __construct(ManagerRegistry $registry)
+-    {
+-        parent::__construct($registry, Artiste::class);
+-    }
+-
+-    // /**
+-    //  * @return Artiste[] Returns an array of Artiste objects
+-    //  */
+-    /*
+-    public function findByExampleField($value)
+-    {
+-        return $this->createQueryBuilder('a')
+-            ->andWhere('a.exampleField = :val')
+-            ->setParameter('val', $value)
+-            ->orderBy('a.id', 'ASC')
+-            ->setMaxResults(10)
+-            ->getQuery()
+-            ->getResult()
+-        ;
+-    }
+-    */
+-
+-    /*
+-    public function findOneBySomeField($value): ?Artiste
+-    {
+-        return $this->createQueryBuilder('a')
+-            ->andWhere('a.exampleField = :val')
+-            ->setParameter('val', $value)
+-            ->getQuery()
+-            ->getOneOrNullResult()
+-        ;
+-    }
+-    */
+-}
+Index: src/Repository/AlbumRepository.php
+===================================================================
+--- src/Repository/AlbumRepository.php	(revision 6b8011705cf6cff80ebfd4f7c0c0913e03e3ac2d)
++++ src/Repository/AlbumRepository.php	(revision 6b8011705cf6cff80ebfd4f7c0c0913e03e3ac2d)
+@@ -1,50 +0,0 @@
+-<?php
+-
+-namespace App\Repository;
+-
+-use App\Entity\Album;
+-use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+-use Doctrine\Persistence\ManagerRegistry;
+-
+-/**
+- * @method Album|null find($id, $lockMode = null, $lockVersion = null)
+- * @method Album|null findOneBy(array $criteria, array $orderBy = null)
+- * @method Album[]    findAll()
+- * @method Album[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+- */
+-class AlbumRepository extends ServiceEntityRepository
+-{
+-    public function __construct(ManagerRegistry $registry)
+-    {
+-        parent::__construct($registry, Album::class);
+-    }
+-
+-    // /**
+-    //  * @return Album[] Returns an array of Album objects
+-    //  */
+-    /*
+-    public function findByExampleField($value)
+-    {
+-        return $this->createQueryBuilder('a')
+-            ->andWhere('a.exampleField = :val')
+-            ->setParameter('val', $value)
+-            ->orderBy('a.id', 'ASC')
+-            ->setMaxResults(10)
+-            ->getQuery()
+-            ->getResult()
+-        ;
+-    }
+-    */
+-
+-    /*
+-    public function findOneBySomeField($value): ?Album
+-    {
+-        return $this->createQueryBuilder('a')
+-            ->andWhere('a.exampleField = :val')
+-            ->setParameter('val', $value)
+-            ->getQuery()
+-            ->getOneOrNullResult()
+-        ;
+-    }
+-    */
+-}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"6721894e-ef85-4547-a5d4-a918d7ad2e17\" name=\"Default Changelist\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.env\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.env\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/composer.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/composer.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/composer.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/composer.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/config/bundles.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/config/bundles.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/symfony.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/symfony.lock\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\" synchronizationState=\"SYNCHRONIZE\">\r\n    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>\r\n    <execution />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"PhpWorkspaceProjectConfiguration\">\r\n    <include_path>\r\n      <path value=\"$PROJECT_DIR$/vendor/composer\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/annotations\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/cache\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/collections\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/event-manager\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/inflector\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/instantiator\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/lexer\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/common\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/dbal\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/doctrine-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/psr/cache\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/webmozart/assert\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/psr/container\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/willdurand/negotiation\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/psr/event-dispatcher\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/psr/link\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/migrations\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/orm\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/persistence\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/fig/link-util\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/sql-formatter\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/laminas/laminas-eventmanager\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/asset\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/cache\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/psr/log\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/phpdocumentor/reflection-common\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/twig/twig\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/nelmio/cors-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/phpdocumentor/type-resolver\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/laminas/laminas-code\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/deprecation-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/doctrine-bridge\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/dotenv\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/error-handler\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/cache-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/console\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/dependency-injection\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/finder\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/flex\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/framework-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-client-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/event-dispatcher\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/expression-language\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/filesystem\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-mbstring\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-php73\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-php80\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/property-access\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-foundation\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-kernel\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-core\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-csrf\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-guard\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-http\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/property-info\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/proxy-manager-bridge\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/routing\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/twig-bridge\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/validator\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/serializer\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/service-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/stopwatch\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/string\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/var-dumper\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/var-exporter\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/web-link\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/yaml\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/api-platform/core\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/config\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/friendsofphp/proxy-manager-lts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/translation-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/twig-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/nikic/php-parser\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/maker-bundle\" />\r\n    </include_path>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1pGKTdh3mW3Whgofv2J4X42VmWe\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"6721894e-ef85-4547-a5d4-a918d7ad2e17\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1614803995321</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1614803995321</updated>\r\n      <workItem from=\"1614803996508\" duration=\"1912000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"578\" y=\"292\" key=\"#Composer\" timestamp=\"1614804012098\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"578\" y=\"292\" key=\"#Composer/0.0.1536.824@0.0.1536.824\" timestamp=\"1614804012098\" />\r\n    <state x=\"549\" y=\"167\" key=\"FileChooserDialogImpl\" timestamp=\"1614804349038\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"549\" y=\"167\" key=\"FileChooserDialogImpl/0.0.1536.824@0.0.1536.824\" timestamp=\"1614804349038\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 6b8011705cf6cff80ebfd4f7c0c0913e03e3ac2d)
++++ .idea/workspace.xml	(date 1614806279966)
+@@ -19,13 +19,7 @@
+     <select />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="6721894e-ef85-4547-a5d4-a918d7ad2e17" name="Default Changelist" comment="">
+-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+-    </list>
++    <list default="true" id="6721894e-ef85-4547-a5d4-a918d7ad2e17" name="Default Changelist" comment="C'est beau sa mère on a la base" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -144,8 +138,16 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1614803995321</updated>
+-      <workItem from="1614803996508" duration="1912000" />
++      <workItem from="1614803996508" duration="2267000" />
++    </task>
++    <task id="LOCAL-00001" summary="C'est beau sa mère on a la base">
++      <created>1614806028871</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1614806028871</updated>
+     </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -161,6 +163,10 @@
+         </entry>
+       </map>
+     </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="C'est beau sa mère on a la base" />
++    <option name="LAST_COMMIT_MESSAGE" value="C'est beau sa mère on a la base" />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="578" y="292" key="#Composer" timestamp="1614804012098">
+@@ -171,5 +177,9 @@
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1614804349038" />
++    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1614806259761">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1614806259761" />
+   </component>
+ </project>
+\ No newline at end of file
