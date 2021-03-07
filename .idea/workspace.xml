@@ -19,19 +19,30 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6721894e-ef85-4547-a5d4-a918d7ad2e17" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="6721894e-ef85-4547-a5d4-a918d7ad2e17" name="Default Changelist" comment="C'est beau sa mère on a la base">
+      <change afterPath="$PROJECT_DIR$/infoASuppe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/_navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/serviceWebProjet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/serviceWebProjet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/AlbumRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ArtisteRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ArtisteRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ContenuRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/GroupeRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/MorceauRepository.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -122,6 +133,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1pGKTdh3mW3Whgofv2J4X42VmWe" />
@@ -132,9 +144,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quentin.georghiou1\Documents\Cours\WS\exam\serviceWebProjet\public" />
+      <recent name="C:\Users\quentin.georghiou1\Documents\Cours\WS\exam\serviceWebProjet\src\Repository" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -144,8 +162,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614803995321</updated>
-      <workItem from="1614803996508" duration="1912000" />
+      <workItem from="1614803996508" duration="3183000" />
+      <workItem from="1614874844235" duration="5605000" />
+      <workItem from="1614940993822" duration="1155000" />
+      <workItem from="1615141824654" duration="1440000" />
     </task>
+    <task id="LOCAL-00001" summary="C'est beau sa mère on a la base">
+      <created>1614806028871</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614806028871</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,15 +190,36 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="C'est beau sa mère on a la base" />
+    <option name="LAST_COMMIT_MESSAGE" value="C'est beau sa mère on a la base" />
   </component>
   <component name="WindowStateProjectService">
     <state x="578" y="292" key="#Composer" timestamp="1614804012098">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="292" key="#Composer/0.0.1536.824@0.0.1536.824" timestamp="1614804012098" />
+    <state x="521" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614875056415">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="521" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1614875056415" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1614804349038">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1614804349038" />
+    <state x="147" y="65" key="MergeDialog" timestamp="1615141959468">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="65" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1615141959468" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1614806259761">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1614806259761" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615141932346">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1615141932346" />
   </component>
 </project>
