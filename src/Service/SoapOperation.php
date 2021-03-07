@@ -55,16 +55,6 @@ class SoapOperations
         return (float)($a + $b + $c);
     }
 
-    /**
-     * Récupère le libellé d'un secteur dont on connaît l'id
-     * @return \App\Soap\SecteurSoap Le secteur avec l'id et le libellé
-     */
-    public function getSecteurLibelle($sect)
-    {
-        $secteur = $this->doct->getRepository(\App\Entity\Secteur::class)->find($sect->id);
-        $sector = new SecteurSoap($secteur->getId(), $secteur->getLibelle());
-        return $sector;
-    }
 
     /**
      * Récupère le libellé d'un secteur dont on connaît l'id
