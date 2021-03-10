@@ -23,12 +23,11 @@ class ArtisteController extends AbstractController
 
         $response = new Response(
             '<html><body>
+                    
+                    <p> Lucky number: bfeusdbfuesbfu </p> 
+                    <pre id="json"></pre>
+                    
                     <script type="text/javascript" src="/monscript.js"></script>
-                    Lucky number: bfeusdbfuesbfu 
-<pre id="json"></pre>
-                       
-                       
-                       </div>
                 </body></html>'
         );
         $response->headers->set('Access-Control-Allow-Origin', '*');
