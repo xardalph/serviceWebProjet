@@ -1,27 +1,37 @@
 <?php
 
+
 namespace App\Controller;
 
 use App\Repository\ArtisteRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class ArtisteController extends AbstractController
 {
-    private $client;
-
     /**
      * @Route("/artiste", name="artiste")
-
+     * @param HttpClientInterface $client
+     * @return Response
+     * @throws TransportExceptionInterface
      */
-    public function index(): Response
+    public function index(HttpClientInterface $client): Response
     {
 
-        return $this->render('artiste/index.html.twig', [
-            'controller_name' => 'ArtisteController',
-            'test' => $content
-        ]);
+        $response = new Response(
+            '<html><body>
+                    <script type="text/javascript" src="/monscript.js"></script>
+                    Lucky number: bfeusdbfuesbfu 
+<pre id="json"></pre>
+                       
+                       
+                       </div>
+                </body></html>'
+        );
+        $response->headers->set('Access-Control-Allow-Origin', '*');
+        return $response;
     }
 }
